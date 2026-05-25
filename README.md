@@ -16,11 +16,10 @@ GitHub Pages: https://magicecoleai.github.io/aventures-ai-native-cowork-workshop
 | [03_Cowork_업무생산성_프롬프트팩.md](03_Cowork_업무생산성_프롬프트팩.md) | Claude/Cowork에 바로 붙여넣을 프롬프트 |
 | [04_운영자_체크리스트.md](04_운영자_체크리스트.md) | 사전 준비, 현장 진행, 문제 대응 체크리스트 |
 | [05_슬라이드_아웃라인.md](05_슬라이드_아웃라인.md) | AI Native 강의와 클로징용 슬라이드 아웃라인 |
-| [06_에이벤처스_고객분석_워크샵_시사점.md](06_에이벤처스_고객분석_워크샵_시사점.md) | 에이벤처스 공개자료 기반 업무 분석과 워크샵 맞춤화 방향 |
 | [07_최종_워크샵_운영안_AI_Native_Cowork_MAX_VCTeam.md](07_최종_워크샵_운영안_AI_Native_Cowork_MAX_VCTeam.md) | AI Native 강의, PDF 실습, MAX VCTeam 소개를 반영한 최종 운영안 |
 | [08_AI_Native_기술의_현재와_미래_30분_강의안.md](08_AI_Native_기술의_현재와_미래_30분_강의안.md) | 시작 30분 강의용 메시지와 슬라이드별 스크립트 |
 | [09_MAX_VCTeam_소개_및_데모_시나리오.md](09_MAX_VCTeam_소개_및_데모_시나리오.md) | MAX VCTeam 소개와 투자검토 데모 시나리오 |
-| [10_클로징_회고_및_후속제안_멘트.md](10_클로징_회고_및_후속제안_멘트.md) | 회고, 후속 PoC, MAX VCTeam 시범 제공 클로징 멘트 |
+| [10_클로징_회고_및_후속제안_멘트.md](10_클로징_회고_및_후속제안_멘트.md) | 회고, 후속 PoC, MAX VCTeam 파일럿 검토 클로징 멘트 |
 | [실습자료/README.md](실습자료/README.md) | Cowork 실습용 더미 자료 안내 |
 
 ## 운영 컨셉
@@ -38,7 +37,7 @@ GitHub Pages: https://magicecoleai.github.io/aventures-ai-native-cowork-workshop
 - Claude 유료 플랜 또는 조직 계정
 - 첨부 PDF 기준 실습자료 다운로드
 - Chrome 브라우저
-- PlayMCP와 카카오톡 나챗방 실습 가능 여부
+- PlayMCP와 카카오톡 나챗방은 보안 정책에 따라 선택 실습 또는 강사 데모로 운영
 - 실제 IR Deck, 투자계약서, LP 자료, 포트폴리오 미공개 실적을 쓰지 않는다는 공통 원칙
 
 Cowork 접근이 어려운 참가자는 강사 데모를 보며 워크시트와 회고 중심으로 참여한다.

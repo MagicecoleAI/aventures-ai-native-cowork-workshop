@@ -8,7 +8,6 @@ const documents = [
   ["03_Cowork_업무생산성_프롬프트팩.md", "03-cowork-prompt-pack.html", "03", "Cowork 프롬프트팩"],
   ["04_운영자_체크리스트.md", "04-operator-checklist.html", "04", "운영자 체크리스트"],
   ["05_슬라이드_아웃라인.md", "05-slide-outline.html", "05", "슬라이드 아웃라인"],
-  ["06_에이벤처스_고객분석_워크샵_시사점.md", "06-customer-analysis.html", "06", "고객 분석과 워크샵 시사점"],
   ["07_최종_워크샵_운영안_AI_Native_Cowork_MAX_VCTeam.md", "07-final-runbook.html", "07", "최종 워크샵 운영안"],
   ["08_AI_Native_기술의_현재와_미래_30분_강의안.md", "08-ai-native-lecture.html", "08", "AI Native 30분 강의안"],
   ["09_MAX_VCTeam_소개_및_데모_시나리오.md", "09-max-vcteam-demo.html", "09", "MAX VCTeam 소개와 데모"],
@@ -40,7 +39,7 @@ function inlineMarkdown(value) {
   html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, href) => {
     const cleanHref = href.trim();
     const converted = pageMap.get(cleanHref) ? pageMap.get(cleanHref) : cleanHref;
-    const prefix = pageMap.has(cleanHref) ? "" : cleanHref.endsWith(".md") ? "../" : "";
+    const prefix = pageMap.has(cleanHref) ? "" : cleanHref.startsWith("assets/") || cleanHref.endsWith(".md") ? "../" : "";
     return `<a href="${prefix}${escapeHtml(converted)}">${label}</a>`;
   });
   return html;
