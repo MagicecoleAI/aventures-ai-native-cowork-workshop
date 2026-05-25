@@ -192,10 +192,7 @@ function renderPage({ source, target, number, title, body }) {
     <title>${escapeHtml(title)} · 에이벤처스 워크샵</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="icon"
-      href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="%232146ff"/><text x="10" y="40" font-family="monospace" font-size="18" font-weight="700" fill="white">MAX</text></svg>'
-    />
+    <link rel="icon" href="../assets/brand/aventures-logo.jpg" />
     <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap"
       rel="stylesheet"
@@ -205,6 +202,10 @@ function renderPage({ source, target, number, title, body }) {
   <body>
     <header class="doc-topbar">
       <a href="../index.html#materials" class="back-link">전체 자료</a>
+      <div class="doc-brand" aria-label="에이벤처스 워크샵">
+        <img src="../assets/brand/aventures-logo.jpg" alt="에이벤처스 로고" />
+        <span>AVentures Workshop</span>
+      </div>
       <a href="${sourceHref}" class="source-link">Markdown 원문</a>
     </header>
     <main class="doc-shell">
