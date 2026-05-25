@@ -2,16 +2,15 @@ import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { basename } from "node:path";
 
 const documents = [
-  ["00_프로그램_설계서.md", "00-program-design.html", "00", "프로그램 설계서"],
-  ["01_상세_타임테이블.md", "01-timetable.html", "01", "상세 타임테이블"],
-  ["02_참가자_실습워크북.md", "02-participant-workbook.html", "02", "참가자 실습 워크시트"],
-  ["03_Cowork_업무생산성_프롬프트팩.md", "03-cowork-prompt-pack.html", "03", "Cowork 프롬프트팩"],
-  ["04_운영자_체크리스트.md", "04-operator-checklist.html", "04", "운영자 체크리스트"],
-  ["05_슬라이드_아웃라인.md", "05-slide-outline.html", "05", "슬라이드 아웃라인"],
-  ["07_최종_워크샵_운영안_AI_Native_Cowork_MAX_VCTeam.md", "07-final-runbook.html", "07", "최종 워크샵 운영안"],
-  ["08_AI_Native_기술의_현재와_미래_30분_강의안.md", "08-ai-native-lecture.html", "08", "AI Native 30분 강의안"],
-  ["09_MAX_VCTeam_소개_및_데모_시나리오.md", "09-max-vcteam-demo.html", "09", "MAX VCTeam 소개와 데모"],
-  ["10_클로징_회고_및_후속제안_멘트.md", "10-closing-remarks.html", "10", "클로징 멘트"],
+  ["01_프로그램_설계서.md", "01-program-design.html", "1", "프로그램 설계서"],
+  ["02_상세_타임테이블.md", "02-timetable.html", "2", "상세 타임테이블"],
+  ["03_참가자_실습워크북.md", "03-participant-workbook.html", "3", "참가자 실습 워크시트"],
+  ["04_Cowork_업무생산성_프롬프트팩.md", "04-cowork-prompt-pack.html", "4", "Cowork 프롬프트팩"],
+  ["05_운영자_체크리스트.md", "05-operator-checklist.html", "5", "운영자 체크리스트"],
+  ["06_슬라이드_아웃라인.md", "06-slide-outline.html", "6", "슬라이드 아웃라인"],
+  ["07_최종_워크샵_운영안_AI_Native_Cowork_MAX_VCTeam.md", "07-final-runbook.html", "7", "최종 워크샵 운영안"],
+  ["08_AI_Native_기술의_현재와_미래_30분_강의안.md", "08-ai-native-lecture.html", "8", "AI Native 30분 강의안"],
+  ["09_MAX_VCTeam_소개_및_데모_시나리오.md", "09-max-vcteam-demo.html", "9", "MAX VCTeam 소개와 데모"],
 ];
 
 const pageMap = new Map(documents.map(([source, target]) => [source, target]));
