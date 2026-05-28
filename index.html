@@ -43,6 +43,7 @@
         <a href="#overview">개요</a>
         <a href="#schedule">시간표</a>
         <a href="#practice">실습</a>
+        <a href="#vibecoding">바이브코딩</a>
         <a href="#vcteam">MAX VCTeam</a>
         <a href="#materials">자료</a>
       </nav>
@@ -187,6 +188,141 @@
             <h3>Legal Plugin</h3>
             <p>IR 평가 문서에 법률 리스크 관점을 보강합니다. 최종 법률 판단은 전문가 검토가 필요합니다.</p>
           </article>
+        </div>
+      </section>
+
+      <section id="vibecoding" class="band vibecoding">
+        <div class="section-head">
+          <p class="eyebrow">Vibecoding UI Lab</p>
+          <h2>자연어로 업무용 UI를 만들고 고치는 흐름</h2>
+        </div>
+        <div class="vibe-layout">
+          <div class="vibe-copy">
+            <p class="vibe-thesis">
+              바이브코딩은 코드를 외워서 시작하는 방식이 아니라, 만들고 싶은 화면을 말하고 결과를 확인한 뒤 다시 수정 지시를 내리는 반복 작업입니다.
+            </p>
+            <div class="term-grid" aria-label="웹과 UI 기본 용어">
+              <article>
+                <span>HTML</span>
+                <p>제목, 문단, 이미지, 버튼처럼 화면의 내용과 구조를 정합니다.</p>
+              </article>
+              <article>
+                <span>CSS</span>
+                <p>색, 여백, 글자 크기, 배치처럼 화면의 디자인을 담당합니다.</p>
+              </article>
+              <article>
+                <span>JavaScript</span>
+                <p>클릭, 메뉴 이동, 탭 전환처럼 화면의 동작을 만듭니다.</p>
+              </article>
+              <article>
+                <span>Responsive</span>
+                <p>PC, 태블릿, 모바일 크기에 맞춰 배치가 자연스럽게 바뀌게 합니다.</p>
+              </article>
+            </div>
+          </div>
+          <ol class="vibe-flow" aria-label="바이브코딩 제작 흐름">
+            <li>
+              <span>01</span>
+              <div>
+                <h3>화면 목적 설명</h3>
+                <p>투자검토, 리서치, 포트폴리오 보고처럼 만들고 싶은 업무 화면을 한 문장으로 정합니다.</p>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <h3>UI 부품으로 나누기</h3>
+                <p>Header, Hero Section, Card, CTA, Footer처럼 화면을 부품 단위로 지시합니다.</p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <h3>파일 생성 요청</h3>
+                <p><code>index.html</code>, <code>styles.css</code>, <code>app.js</code>처럼 정적 홈페이지 파일을 나눠 만들게 합니다.</p>
+              </div>
+            </li>
+            <li>
+              <span>04</span>
+              <div>
+                <h3>브라우저에서 확인</h3>
+                <p>첫 화면 메시지, 카드 가독성, 버튼 위치, 모바일 1열 배치를 직접 확인합니다.</p>
+              </div>
+            </li>
+            <li>
+              <span>05</span>
+              <div>
+                <h3>구체적으로 수정</h3>
+                <p>“제목을 짧게”, “카드 간격을 넓게”, “버튼 대비를 높게”처럼 관찰한 문제를 다시 말합니다.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="component-strip" aria-label="프롬프트에 쓰는 UI 부품 이름">
+          <div>
+            <strong>Header</strong>
+            <span>상단 로고와 메뉴</span>
+          </div>
+          <div>
+            <strong>Hero</strong>
+            <span>첫 화면 핵심 메시지</span>
+          </div>
+          <div>
+            <strong>Section</strong>
+            <span>주제별 내용 영역</span>
+          </div>
+          <div>
+            <strong>Card</strong>
+            <span>정보 묶음</span>
+          </div>
+          <div>
+            <strong>CTA</strong>
+            <span>다음 행동 버튼</span>
+          </div>
+          <div>
+            <strong>Footer</strong>
+            <span>마지막 정보 정리</span>
+          </div>
+        </div>
+
+        <div class="prompt-panel">
+          <div class="prompt-copy">
+            <p class="eyebrow">Starter Prompt</p>
+            <h3>VC 업무용 원페이지 만들기 예시</h3>
+            <p>
+              실제 IR Deck, 투자계약서, LP 자료, 포트폴리오 미공개 실적은 넣지 않고 비식별 더미 데이터로만 실습합니다.
+            </p>
+          </div>
+          <pre><code>너는 IT 비전문가도 이해할 수 있는 업무용 웹 UI를 만드는 프론트엔드 디자이너이자 개발자다.
+
+투자검토 업무 아이디어를 소개하는 간단한 원페이지 홈페이지를 만들어줘.
+
+파일은 index.html, styles.css, app.js 3개로 나눠서 작성해줘.
+
+필요한 섹션:
+1. Header: 왼쪽에는 "AI Review Lab" 로고 텍스트, 오른쪽에는 문제, 해결방식, 기대효과, 실습 메뉴
+2. Hero Section: 투자검토 업무 개선 아이디어를 한 문장으로 소개하는 큰 제목과 버튼
+3. 문제 섹션: 현재 반복되는 리서치·문서화 문제 3개를 카드로 표현
+4. 해결방식 섹션: AI Native 팀이나 Claude Cowork로 바뀌는 TO-BE 흐름 3단계
+5. 기대효과 섹션: 시간 절감, 검토 일관성, 공유 속도 개선 등 기대효과 3개
+6. 실습 섹션: "샘플 내용 채우기" 버튼과 결과 미리보기 영역
+7. Footer: 교육용 비공식 프로토타입임을 표시
+
+조건:
+- 발표 자료로 쓰기 좋은 차분하고 신뢰감 있는 스타일
+- PC와 모바일에서 모두 자연스럽게 보이는 반응형
+- 카드 안에 카드를 중첩하지 않음
+- 실제 회사 내부 정보나 개인정보는 사용하지 않음</code></pre>
+        </div>
+
+        <div class="vibe-checks" aria-label="바이브코딩 결과 확인 항목">
+          <p>확인할 것</p>
+          <span>목적이 첫 화면에서 보이는가</span>
+          <span>Header, Hero, Card, CTA가 구분되는가</span>
+          <span>본문과 버튼 대비가 충분한가</span>
+          <span>모바일에서 1열로 깨지지 않는가</span>
+          <span>더미 데이터만 사용했는가</span>
         </div>
       </section>
 
